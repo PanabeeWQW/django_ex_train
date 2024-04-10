@@ -7,4 +7,8 @@ def main(request):
     return render(request, 'blog/index.html', {'products': products})
 
 def about(request):
-    return render(request, 'blog/about.html')
+    products = Product.objects.all()
+    return render(request, 'blog/about.html', {'products': products})
+
+def findus(request):
+    return render(request, 'blog/findus.html')
