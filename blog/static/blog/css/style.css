@@ -3,3 +3,87 @@
     padding: 0px;
     box-sizing: border-box;
 }
+
+.logo {
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 79%;
+    letter-spacing: 0.02em;
+    color: #438db8;
+    text-decoration: none;
+}
+.header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_links {
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+}
+.ul_header {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.header_menu {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+.menu_link {
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 133%;
+    color: #666;
+    text-decoration: none;
+}
+
+.reg_search_block {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 9.5px;
+}
+
+.reg_log {
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    color: #666;
+    text-decoration: none;
+    border: 1px solid #b4b4b4;
+    border-radius: 4px;
+    padding: 12px;
+    width: 157px;
+    height: 38px;
+}
+
+.basket_button {
+    display: flex;
+    align-items: center;
+    border: 1px solid #b4b4b4;
+    border-radius: 4px;
+    padding: 12px;
+    width: 39px;
+    height: 38px;
+}
+
+.search_button {
+    display: flex;
+    align-items: center;
+    border: 1px solid #b4b4b4;
+    border-radius: 4px;
+    padding: 12px;
+    width: 39px;
+    height: 38px;
+}
