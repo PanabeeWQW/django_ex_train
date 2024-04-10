@@ -10,6 +10,28 @@
     </title>
 </head>
 <body>
+<div class="header">
+    <div class="header_links">
+        <a class="logo" href="{% url 'home' %}">CopyStar</a>
+        <ul class="ul_header">
+            <li class="header_menu"><a class="menu_link" href="#">Каталог</a></li>
+            <li class="header_menu"><a class="menu_link" href="{% url 'about' %}">О нас</a></li>
+            <li class="header_menu"><a class="menu_link" href="{% url 'find_us' %}">Где нас найти</a></li>
+
+        </ul>
+        <div class="reg_search_block">
+            <div class="reg_login_button">
+                <a class="reg_log" href="#">Авторизация|Регистрация</a>
+            </div>
+            <a href="#"><div class="basket_button">
+                <img src="{% static 'blog/images/cart_icon.svg' %}">
+            </div></a>
+            <a href="#"><div class="search_button">
+                <img src="{% static 'blog/images/search_icon.svg' %}">
+            </div></a>
+        </div>
+    </div>
+</div>
 {% block content %}
 {% endblock %}
 </body>
