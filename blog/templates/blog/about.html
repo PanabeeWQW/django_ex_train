@@ -1,5 +1,15 @@
 {% extends 'blog/base.html' %}
 
+{% block title %}
+    Страница о нас
+{% endblock %}
+
 {% block content %}
-<h1>Это страничка о нас</h1>
+<h1>Девиз нашей компании</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit!</p>
+    <div class="about_slider">
+    {% for ab_sl in products %}
+        <p>{{ ab_sl.name }}</p>
+    {% endfor %}
+    </div>
 {% endblock %}
