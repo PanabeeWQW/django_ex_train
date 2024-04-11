@@ -66,6 +66,12 @@
     padding: 12px;
     width: 157px;
     height: 38px;
+    transition: 0.3s;
+}
+
+.reg_log:hover {
+    color: #ffffff;
+    background-color: #438db8;
 }
 
 .basket_button {
@@ -76,6 +82,12 @@
     padding: 12px;
     width: 39px;
     height: 38px;
+    transition: 0.3s;
+}
+
+.basket_button:hover {
+    color: #ffffff;
+    background-color: #438db8;
 }
 
 .search_button {
@@ -86,4 +98,10 @@
     padding: 12px;
     width: 39px;
     height: 38px;
+    transition: 0.3s;
+}
+
+.search_button:hover {
+    color: #ffffff;
+    background-color: #438db8;
 }
