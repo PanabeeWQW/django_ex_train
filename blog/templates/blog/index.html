@@ -1,13 +1,27 @@
 {% extends 'blog/base.html' %}
-
+{% load  static %}
+{% block links %}
+    <link rel="stylesheet" href="{% static 'blog/css/index.css' %}">
+{% endblock %}
 {% block title %}
     Copy Star
 {% endblock %}
 {% block content %}
-    <h1>Это главная страница сайта</h1>
-    {% for el in products %}
-    <div class="product_card">
-    <h3>{{ el.name }}</h3>
+    <div class="welcome_block">
+    <h1 class="welcome_words">Качественные принтеры для наших клиентов</h1>
     </div>
-    {% endfor %}
+    <div class="product_index">
+    <h1 class="product_index_title">
+        Принтеры для вашего производства
+    </h1>
+    {% for el in products %}
+    <div class="card_product">
+        <a href="{{ el.get_absolute_url }}" class="product_link">
+            <img src="{{ el.image.url }}" class="product_image">
+            <h3 class="card_product_name">{{ el.name }}</h3>
+            <h3 class="card_product_price">{{ el.price }}</h3>
+        </a>
+    </div>
+{% endfor %}
+    </div>
 {% endblock %}
