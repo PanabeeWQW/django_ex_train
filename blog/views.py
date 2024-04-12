@@ -15,3 +15,6 @@ def findus(request):
 
 def product(request, product_id):
     return HttpResponse(f"Название продукта {product_id}")
+
+def catalog(request):
+    return render(request, 'blog/catalog.html')
