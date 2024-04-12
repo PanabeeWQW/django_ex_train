@@ -14,6 +14,7 @@
     <h1 class="product_index_title">
         Принтеры для вашего производства
     </h1>
+    <div class="products">
     {% for el in products %}
     <div class="card_product">
         <a href="{{ el.get_absolute_url }}" class="product_link">
@@ -23,5 +24,6 @@
         </a>
     </div>
 {% endfor %}
+    </div>
     </div>
 {% endblock %}
