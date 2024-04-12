@@ -29,7 +29,7 @@
 .product_index {
     margin: 0 auto;
     width: 1241px;
-    height: 717px;
+
 }
 
 .product_index_title {
@@ -42,13 +42,25 @@
     color: #666;
 }
 
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 25px;
+}
+
+.product_link {
+    text-decoration: none;
+}
+
 .catalog_product_link {
     text-decoration: none;
 }
 
 .catalog_product {
-    padding-top: 34px;
+    margin-top: 34px;
     width: 1234px;
+
 }
 
 .card_product {
@@ -58,6 +70,8 @@
     height: 236px;
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.25);
     background: #fff;
+    margin-top: 30px;
+    margin-right: 16px;
 }
 
 .product_image {
