@@ -1,0 +1,21 @@
+.product_cat {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    gap: 20px;
+}
+
+li {
+    list-style: none;
+}
+
+.sort_by {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    gap: 20px;
+}
+
+.prod_block {
+    margin-top: 30px;
+}

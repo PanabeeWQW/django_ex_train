@@ -24,7 +24,7 @@ class Product(models.Model):
     image = models.ImageField(verbose_name='Картинка товара', upload_to="products_image")
     name = models.CharField(max_length=100)
     description = models.TextField()
-    production_year = models.DateTimeField()
+    production_year = models.DateField()
     price = models.DecimalField(max_digits=10, decimal_places=2)
     quantity = models.IntegerField()
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
