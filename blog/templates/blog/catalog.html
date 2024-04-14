@@ -3,3 +3,18 @@
 {% block title %}
     Каталог
 {% endblock %}
+
+{% block content %}
+    <ul>
+        <li><a href="{% url 'catalog' %}">Показать все товары</a></li>
+        {% for cat in cats %}
+            <li><a href="{% url 'category' cat_id=cat.pk %}">{{ cat.name }}</a></li>
+        {% endfor %}
+    </ul>
+    <h1>{{ category.name }}</h1>
+    <ul>
+        {% for product in products %}
+            <li>{{ product.name }} - {{ product.description }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
